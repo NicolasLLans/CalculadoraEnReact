@@ -1,6 +1,8 @@
 import './App.css';
+import BotonClear from './componentes/BotonClear';
+import Pantalla from './componentes/Pantalla';
 import Boton from './componentes/boton';
-import lombarditoLogo from './imagenes/lombardito.png'
+import lombarditoLogo from './imagenes/lombardito.png';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         alt='logo lombardito' />
       </div>
       <div className='contenedor-calculadora'>
+        <Pantalla />
         <div className='fila'>
           <Boton>1</Boton>
           <Boton>2</Boton>
@@ -35,6 +38,9 @@ function App() {
           <Boton>0</Boton>
           <Boton>.</Boton>
           <Boton>/</Boton>
+        </div>
+        <div className='fila'>
+          <BotonClear>Borrar</BotonClear>
         </div>
       </div>
     </div>
